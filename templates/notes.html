@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Notes</title>
+</head>
+<body>
+    <h1>Your Notes</h1>
+
+    <ul>
+        {% for note in notes %}
+            <li>{{ note[1] }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Go Back</a>
+</body>
+</html>
